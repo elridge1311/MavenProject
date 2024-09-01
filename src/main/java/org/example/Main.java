@@ -10,7 +10,7 @@ public class Main {
     private static Properties properties = new Properties();
 
     public static void main(String[] args) throws IOException {
-        InputStream input = new FileInputStream("./target/config/config.properties");
+        InputStream input = new FileInputStream(".\\target\\config\\config.properties");
         properties.load(input);
         String myProperty = properties.getProperty("my.property");
         System.out.println("My Name is : " + myProperty);
